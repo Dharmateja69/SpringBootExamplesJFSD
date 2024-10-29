@@ -5,6 +5,8 @@ package com.klef.ControllerPostmanapi;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 
 
@@ -30,6 +32,12 @@ public class CutomerController {
     public String home() {
         return "home";
     }
+    
+    @GetMapping("/sidu")
+    public String mainpage(@RequestParam String param) {
+        return new String();
+    }
+    
     
     
     
